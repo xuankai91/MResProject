@@ -11,7 +11,7 @@ url: https://osf.io/748fe
 # Files
 ## Main folder
 
-*Files*
+*Files* \n
 * 'AllFullData.csv' - Raw collected data, including stim/border colours, PM target responses, and lapses. \n
 * 'tofit_HDDM.csv' - Preprocessed data, to be compatible with HDDM fitting, e.g. removal of lapses (unfittable), generation of conditional flags, rearrangement. \n
 * 'multiprocessing_unittest.py' - unit test for multiprocessing module on User's computer; parallel run time should be significantly less than sequential run time. \n
