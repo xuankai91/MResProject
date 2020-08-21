@@ -21,11 +21,11 @@ url: https://osf.io/748fe
 
 Reanalyzing the data using updated Python version (3.6.8) and HDDM package version (0.8.0; dependencies: PyMC 2.3.7, Kabuki 0.6.3)
 
-*Files* \n
-'bs_modelling.py' - Script to run all 4 models under comparison. Change the variable **cores_to_use** to however many is necessary, dependent on User hardware.
-'gelman_rubin.py' - Script to generate 5 winning models, to check convergence stats (R_hat). Change the variable **cores_to_use** to however many is necessary, dependent on User hardware.
-'ppc_parallel.py' - Generate 100 samples from posterior predictive distributions of winning model 5 times in parallel . Change the variable **cores_to_use** to however many is necessary, dependent on User hardware.
-'ppc_summary.py' - Compile the generated posterior predictive samples, and calculate group/individual stats in comparison to actual collected data.
+*Files*
+* 'bs_modelling.py' - Script to run all 4 models under comparison. Change the variable **cores_to_use** to however many is necessary, dependent on User hardware.
+* 'gelman_rubin.py' - Script to generate 5 winning models, to check convergence stats (R_hat). Change the variable **cores_to_use** to however many is necessary, dependent on User hardware.
+* 'ppc_parallel.py' - Generate 100 samples from posterior predictive distributions of winning model 5 times in parallel . Change the variable **cores_to_use** to however many is necessary, dependent on User hardware.
+* 'ppc_summary.py' - Compile the generated posterior predictive samples, and calculate group/individual stats in comparison to actual collected data.
 
 *Subfolders* TO BE UPDATED
 ### figures
