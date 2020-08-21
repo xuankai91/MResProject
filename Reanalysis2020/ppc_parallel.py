@@ -44,7 +44,7 @@ if __name__ == '__main__':
   from itertools import product
   
   with Pool(cores_to_use) as pool:
-    _ = pool.starmap(PPC, product([100],[4,5]))
+    _ = pool.starmap(PPC, product([100],list(range(5))))
  
 
 
