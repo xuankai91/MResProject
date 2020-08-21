@@ -5,7 +5,7 @@
 cores_to_use = 2
 
 #core function script
-def between_subjects_modelling(flag,n=None):
+def between_subjects_modelling(flag):
 
   import hddm
 
@@ -53,12 +53,6 @@ def between_subjects_modelling(flag,n=None):
     model = hddm.HDDM(data, 
                       include=('sv', 'st', 'sz'),
                       p_outlier=.05)
-  elif flag == 'grs':
-    model = hddm.HDDM(data, 
-                      depends_on={'v':'stim','a':'stim','t':'stim'},
-                      include=('sv', 'st', 'sz'),
-                      p_outlier=.05)
-    flag = '%s_%d' % (flag,n)
  
   #start model fitting
   model.find_starting_values()
@@ -74,15 +68,11 @@ def between_subjects_modelling(flag,n=None):
 
 
 #start run
-from multiprocessing import Pool
-
 if __name__ == '__main__':
 
-  #pool = Pool(cores_to_use)
-  #_ = pool.map(between_subjects_modelling, iterable=['all','PM','noPM','null'])
+  from multiprocessing import Pool
+
+  pool = Pool(cores_to_use)
+  _ = pool.map(between_subjects_modelling, iterable=['all','PM','noPM','null'])
   
-  from itertools import product
-  
-  with Pool(cores_to_use) as pool:
-    _ = pool.starmap(between_subjects_modelling, product(['grs'],[4,5]))
- 
+
