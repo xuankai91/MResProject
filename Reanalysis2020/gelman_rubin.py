@@ -36,8 +36,8 @@ def gelman_rubin_models(n):
   model.sample(samples, burn=int(samples/10), dbname='%s/gelman_rubin/m_grs_%d_traces.db' % (savepath,n), db='pickle')
   model.save('%s/gelman_rubin/m_grs_%d' % (savepath,n))
 
-  model.gen_stats().to_csv('%s/stats/data_grs_%d.csv' % (savepath,n), sep = ',', encoding='utf-8')
-  model.get_group_traces().to_csv('%s/traces/data_grs_%d_traces.csv' % (savepath,n), sep = ',', encoding='utf-8')
+  #model.gen_stats().to_csv('%s/stats/data_grs_%d.csv' % (savepath,n), sep = ',', encoding='utf-8')
+  #model.get_group_traces().to_csv('%s/traces/data_grs_%d_traces.csv' % (savepath,n), sep = ',', encoding='utf-8')
   
 
 #start run
