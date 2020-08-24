@@ -29,15 +29,21 @@ Reanalyzing the data using updated Python version (3.6.8) and HDDM package versi
 
 *Subfolders* TO BE UPDATED
 * ### figures
+  save folder for all figure plots
 
 * ### gelman_rubin
+  save folder for 5 repeated fits of the winning model <m_all>, for calculating gelman-rubin convergence stats.
 
 * ### models
+  save folder for all fitted models under consideration
 
 * ### ppc
+  save folder for posterior predictive checks generated from the winning model <m_all>
 
 * ### stats
+  save folder for statistics associated with each of the fitted models under consideration
 
 * ### traces
+  save folder for raw traces of each parameter for all fitted models
 
 
