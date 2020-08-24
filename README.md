@@ -27,7 +27,7 @@ Reanalyzing the data using updated Python version (3.6.8) and HDDM package versi
 * `ppc_parallel.py` - Generate 100 samples from posterior predictive distributions of winning model 5 times in parallel . Change the variable `cores_to_use` to however many is necessary, dependent on User hardware.
 * `ppc_summary.py` - Compile the generated posterior predictive samples, and calculate group/individual stats in comparison to actual collected data.
 
-*Subfolders* TO BE UPDATED
+*Subfolders* 
 * ### figures
   save folder for all figure plots
 
@@ -44,6 +44,6 @@ Reanalyzing the data using updated Python version (3.6.8) and HDDM package versi
   save folder for statistics associated with each of the fitted models under consideration
 
 * ### traces
-  save folder for raw traces of each parameter for all fitted models
+  save folder for raw traces of each parameter for all fitted models under consideration
 
 
