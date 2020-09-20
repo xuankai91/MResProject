@@ -45,5 +45,23 @@ Reanalyzing the data using updated Python version (3.6.8) and HDDM package versi
 
 * ### traces
   save folder for raw traces of each parameter for all fitted models under consideration
+  
+# Results
+
+Null model
+DIC: -5486.019
+BPIC: -5378.652
+
+All varying
+DIC: -31071.774
+BPIC: -49113.320
+
+R=U, != C
+DIC: -30649.553
+BPIC: -48577.427
+
+R=C, != U
+DIC: -29031.655
+BPIC: -47333.894
 
 
